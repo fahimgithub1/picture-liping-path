@@ -1,0 +1,476 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li{
+    display: inline;
+}
+
+button{
+    border-radius: var(--border-radius);
+    border: none;
+    background-color: var(--Frist-Color);
+    border: none;
+    padding: 8px 17px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: var(--Second-Color);
+}
+
+button a,
+button a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.PaddingBgDiv{
+    padding: 50px;
+}
+
+.LogoWidth{
+    max-width: 215px;
+}
+
+.SectionMarginBot{
+    margin-bottom: 40px;
+}
+
+.SectionTitle{
+    color: var(--Frist-Color);
+    margin-bottom: 40px;
+    font-weight: bold !important;
+    text-transform: uppercase; 
+}
+
+/* Navigation start */
+.TopHeder{
+    background: var(--Frist-Color);
+    color: white;
+}
+
+.TopHeder span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.TopHeder .PnoneDiv{
+    margin-right: 16px;
+}
+
+.TopHeder ul li:not(:last-child){
+    margin-right: 10px;
+}
+
+.BottomNav{
+    border-bottom: 4px solid var(--Second-Color);
+}
+
+.BottomNav .navbar-brand{
+    max-width: 210px;
+    justify-content: space-between;
+}
+
+.BottomNav .navbar-brand img{
+    width: 100%;
+}
+
+.BottomNav .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+}
+
+.BottomNav ul li {
+    justify-content: center;
+    font-weight: 600;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+.BottomNav .navbar-nav button{
+    width: min-content;
+}
+/* Navigation end */
+
+
+/* Footer start */
+.FristFooter{
+    background-color: var(--Frist-Footer);
+}
+
+.FristFooter ul li{
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.FristFooter ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.FristFooter ul li a:hover{
+    text-decoration: none;
+    color: var(--Second-Color);
+}
+
+.FristFooter .LogoWidth{
+    margin-bottom: 20px;
+}
+
+.FooterDiv1 p,
+.FooterDiv2 ul li{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.FooterDiv1 p{
+    font-weight: 400;
+}
+
+.FoterTaitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+    color: var(--Frist-Color);
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.LastFooter{
+    background-color: black;
+    color: rgb(207, 207, 207);
+    text-align: center;
+}
+
+.LastFooter p{
+    margin-bottom: 0;
+}
+
+.FooterDiv4 i{
+    color: var(--Frist-Color);
+    font-size: 24px;
+}
+/* Footer end */
+
+/* heros start */
+.Heros{
+    margin-top: 30px;
+    border-radius: 12px;
+    padding: 0 15px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    max-height: 400px;
+}
+
+.Heros img{
+    max-height: 400px;
+    filter: blur(2px);
+}
+
+.carousel{
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .7;
+    top: calc((85%-50px)/2);
+    background-color: var(--Frist-Color);
+    border-radius: 50%;
+}
+
+.carousel-control-prev{
+    left: 3%;
+}
+
+.carousel-control-next{
+    right: 3%;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgb(93, 93, 93);
+    background-color: var(--Frist-Color);
+}
+
+.Heros h5{
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+
+.carousel-caption button{
+    font-weight: 700;
+    font-size: 22px;
+    padding: 8px 20px;
+}
+/* heros end */
+
+/* services start */
+.SectionMarginBot{
+    border-radius: var(--border-radius);
+}
+
+.PerServices{
+    position: relative;
+    height: 310px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: var(--border-radius);
+}
+
+.SectionMarginBot .Image{
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.ServicesText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    background-color: var(--Second-Color);
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.ServicesText:hover{
+    background-color: var(--Frist-Color);
+    cursor: pointer;
+}
+
+.ImageComparision{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.ImageComparision img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+#seconImage{
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+#slider{
+    position: absolute;
+    -webkit-appearance: none;
+    height: 100%;
+    /* margin-top: -9%; */
+    width: calc(100% + 30px);
+    margin-left: -20px;
+    background-color: transparent;
+    outline: none;
+}
+
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-size: contain;
+    cursor: pointer;
+    background: url(../Images/2413271.png), rgba(210, 210, 210, 0.363);
+}
+
+.ServiceWithOverview img{
+    border-radius: 12px;
+    max-width: 250px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.ServiceWithOverview .SectionTitle{
+    margin-bottom: 10px;
+}
+
+.ServiceWithOverview p{
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+/* services end */
+
+/* oure work start */
+.SampleWorks button{
+    width: 150px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+/* oure work start */
+
+/* responsive start */
+@media screen and (min-width: 575px) {
+    .TopHeder .LeftSide{
+        text-align: left !important;
+    }
+
+    .carousel-caption {
+        height: 150px;
+        top: calc((50%-150px)/2);
+        color: #fff;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .BottomNav ul li{
+        font-size: 15px;
+    }
+}
+
+/* for tabe */
+@media screen and (max-width: 1024px) {
+    .PaddingBgDiv{
+        padding: 25px;
+    }
+
+    .Heros{
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    .SectionMarginBot{
+        margin-bottom: 25px;
+    }
+    
+    .SectionTitle{
+        margin-bottom: 15px;
+    }
+
+    .SampleWorks button{
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+}
+
+/* for mobile */
+
+
+@media screen and (max-width: 767px) {
+    .PaddingBgDiv{
+        padding: 15px;
+    }
+
+    .Heros{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    .SectionMarginBot{
+        margin-bottom: 15px;
+    }
+
+    .navbar-brand img{
+        max-width: 100px;
+    }
+
+    .carousel-caption button{
+        font-weight: 700;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .Heros h5{
+        font-weight: 700;
+        font-size: 22px;
+    }
+    
+    .SectionTitle{
+        margin-bottom: 5px;
+    }
+
+    .SampleWorks button{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .carousel-indicators{
+        margin-bottom: 5px;
+    }
+
+    .MobileW50{
+        width: 50%;
+    }
+
+    .ServicesText {
+        font-size: 14px;
+    }
+
+    .PerServices,
+    .SectionMarginBot .Image{
+        height: 220px;
+    }
+
+
+}
+
+@media screen and (max-width: 374px) {
+    .Heros h5{
+        font-size: 16px;
+    }
+}
+/* responsive end */
+
+:root{
+    --Frist-Color: #2C3076;
+    --Second-Color: #0389CA;
+    --border-radius: 12px;
+    --Frist-Footer: #CCCCCC;
+    --Box-Shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)):
+}
