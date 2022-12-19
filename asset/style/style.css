@@ -14,6 +14,11 @@ img{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: black !important;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -41,12 +46,13 @@ button:hover{
 
 button a,
 button a:hover{
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
 .PaddingBgDiv{
     padding: 50px;
+    padding-bottom: 30px;
 }
 
 .LogoWidth{
@@ -299,7 +305,6 @@ button a:hover{
     position: absolute;
     -webkit-appearance: none;
     height: 100%;
-    /* margin-top: -9%; */
     width: calc(100% + 30px);
     margin-left: -20px;
     background-color: transparent;
@@ -337,7 +342,7 @@ button a:hover{
 }
 /* services end */
 
-/* oure work start */
+/* our work start */
 .SampleWorks button{
     width: 150px;
     margin: auto;
@@ -345,7 +350,132 @@ button a:hover{
     margin-bottom: 10px;
     font-size: 22px;
 }
-/* oure work start */
+/* our work start */
+
+/* pricing start */
+.PriceSection{
+    background-color: var(--Bg-Section);
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.Pricing{
+    background-color: var(--Bg-Section);
+    box-shadow: 0px 0px 10px rgba(87, 87, 87, 0.25);
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all .5s;
+    margin-bottom: 20px;
+}
+
+.Pricing:hover{
+    transform: translatey(-5px); 
+    box-shadow: 0px 0px 10px rgba(87, 87, 87, 0.55);
+}
+
+.TitleBg{
+    background-color: var(--Frist-Color);
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.Pricing img{
+    width: 124px;
+    height: 118px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.Pricing .PriceImage p{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.PriceAndText{
+    background-color: var(--Second-Color);
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.PriceAndText p:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.PriceAndText p:last-child{
+    margin-bottom: 0px;
+}
+/* pricing start */
+
+/* PerFormance start */
+.PerPerformence{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.PerPerformence h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: var(--Frist-Color);
+}
+
+.PerPerformence p{
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+/* PerFormance end */
+
+/* Why Us start */
+.WhyUsDiv{
+    margin-bottom: 20px;
+}
+
+.USDiv{
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) ;
+}
+
+.USDiv i{
+    margin-bottom: 20px;
+    font-size: 65px;
+    color: var(--Frist-Color);
+}
+
+.USDiv p{
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.USDiv span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+/* Why Us end */
 
 /* responsive start */
 @media screen and (min-width: 575px) {
@@ -371,6 +501,7 @@ button a:hover{
 @media screen and (max-width: 1024px) {
     .PaddingBgDiv{
         padding: 25px;
+        padding-bottom: 5px;
     }
 
     .Heros{
@@ -390,6 +521,24 @@ button a:hover{
         margin-top: 15px;
         margin-bottom: 0px;
     }
+
+    .PriceSectionMain .SampleWorks button{
+        margin-bottom: 25px;
+    }
+
+    .USDiv p {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .USDiv span {
+        font-size: 15px;
+    }
+
+    .USDiv i {
+        margin-bottom: 10px;
+    }
 }
 
 /* for mobile */
@@ -398,6 +547,7 @@ button a:hover{
 @media screen and (max-width: 767px) {
     .PaddingBgDiv{
         padding: 15px;
+        padding-bottom: -5px;
     }
 
     .Heros{
@@ -437,6 +587,19 @@ button a:hover{
         margin-top: 5px;
         margin-bottom: 0px;
     }
+
+    .PriceSectionMain .SampleWorks button{
+        margin-bottom: 0;
+    }
+
+    .PerPerformence p {
+        font-size: 14px;
+    }
+
+    .PerPerformence h2 {
+        font-weight: 700;
+        font-size: 31px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -457,7 +620,22 @@ button a:hover{
         height: 220px;
     }
 
+    .Pricing{
+        margin-bottom: 10px;
+    }
 
+    .PriceSectionMain .container{
+        padding: 0;
+    }
+
+    .PerPerformence h2{
+        font-weight: 600;
+        font-size: 54px;
+    }
+
+    .PerPerformence p{
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -472,5 +650,6 @@ button a:hover{
     --Second-Color: #0389CA;
     --border-radius: 12px;
     --Frist-Footer: #CCCCCC;
-    --Box-Shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)):
+    --Bg-Section: #C8E7F5;
+    --Box-Shadow: 0px 4px 4px rgba(0, 0, 0, 0.25):
 }
