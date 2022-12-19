@@ -70,6 +70,13 @@ button a:hover{
     text-transform: uppercase; 
 }
 
+.container{
+    max-width: 1600px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 /* Navigation start */
 .TopHeder{
     background: var(--Frist-Color);
@@ -138,7 +145,7 @@ button a:hover{
 
 .FristFooter ul li a:hover{
     text-decoration: none;
-    color: var(--Second-Color);
+    color: var(--Second-Color) !important;
 }
 
 .FristFooter .LogoWidth{
@@ -347,7 +354,7 @@ button a:hover{
     width: 150px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 22px;
 }
 /* our work start */
@@ -367,6 +374,7 @@ button a:hover{
     border-radius: 12px;
     transition: all .5s;
     margin-bottom: 20px;
+    max-width: 330px;
 }
 
 .Pricing:hover{
@@ -453,7 +461,7 @@ button a:hover{
     border-radius: 12px;
     text-align: center;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) ;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25) ;
 }
 
 .USDiv i{
@@ -477,7 +485,273 @@ button a:hover{
 }
 /* Why Us end */
 
+/* how it works start */
+.WorkInfoDiv{
+    width: 25%;
+    padding: 15px 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.WorkArrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12.5%;
+    overflow: hidden;
+}
+
+.WorkInfoDiv i{
+    color: var(--Second-Color);
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+
+.WorkInfoDiv h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--Frist-Color);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.WorkInfoDiv p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.WorkArrow i {
+    font-size: 45px;
+}
+/* how it works end */
+
+/* 3 easy steps start */
+.StepsImages{
+    margin-bottom: 10px;
+}
+/* 3 easy steps end */
+
+/* Clients start */
+.Clients h2{
+    margin-bottom: 10px;
+}
+
+.Clients p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.owl-carousel{
+    margin-bottom: 10px;
+}
+
+.owl-carousel img{
+    width: 86% !important;
+    margin: auto;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    height: 15px;
+    width: 15px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: var(--Frist-Color);
+}
+/* Clients end */
+
+/* Blog start */
+.PerBlog{
+    margin-bottom: 20px;
+}
+
+.BlogDiv{
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.BlogDiv:hover{
+    background-color: var(--Bg-Section);
+}
+
+.BlogDiv img{
+    border-radius: 12px;
+    margin-bottom: 10px;
+    max-height: 185px;
+}
+
+.BlogDiv h2{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.BlogDiv p{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+/* Blog end */
+
+/* sister concern start */
+.SocialIcons{
+    background-color: black;
+}
+
+.SisterConcern{
+    background-color: var(--Frist-Footer);
+    border-bottom: 1px solid ;
+    text-align: center;
+}
+
+.SisterConcern .ImageBox{
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.SisterConcern .ImageBox img{
+    border-radius: 12px;
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+/* sister concern start */
+
+/* social meida section start */
+.SocilaSection{
+    background-color: #1C202B;
+    padding-top: 2rem;
+}
+
+.Width-11{
+    width: 11.11%;
+    padding: 5px;
+}
+
+.SocilDivWidth{
+    width: 5.5em;
+    margin: auto;
+    height: 5.5em;
+    border-radius: 10px 10px 0;
+    border: 2px solid #2c66af;
+    border: 2px solid #2c66af;
+    display: flex;
+    margin-bottom: .8rem;
+    border-color: white !important;
+}
+
+.SocilDivWidth i{
+    font-size: 40px;
+    color: blueviolet;
+    margin: auto;
+}
+
+.SocilaText h5{
+    color: white;
+    text-align: center;
+}
+
+.facbook{
+    border-color: #3F5E9B;
+}
+
+.SocilDivWidth .fa-facebook-f{
+    color: #1877F2;
+}
+
+.linkden{
+    border-color: #247CBF;
+}
+
+.SocilDivWidth .fa-linkedin-in{
+    color: #247CBF;
+}
+
+.towter{
+    border-color: #159DD8;
+}
+
+.SocilDivWidth .fa-twitter{
+    color: #159DD8;
+}
+
+.youtube{
+    border-color: #BD2126;
+}
+
+.SocilDivWidth .fa-youtube{
+    color: #BD2126;
+}
+
+.pinterest{
+    border-color: #BD2126;
+}
+
+.SocilDivWidth .fa-pinterest-p{
+    color: #BD2126;
+}
+
+.tumblr{
+    border-color: #36465D;
+}
+
+.SocilDivWidth .fa-tumblr{
+    color: #dddedf;
+}
+
+.flickr{
+    border-color: #FF0084;
+}
+
+.SocilDivWidth .fa-flickr{
+    color: #FF0084;
+}
+
+.instragrem{
+    border-color: #E1D1C1;
+}
+
+.SocilDivWidth .fa-instagram{
+    color: #ED4000;
+}
+
+.behance{
+    border-color: #FFF;
+}
+
+.SocilDivWidth .fa-behance{
+    color: #FFF;
+}
+
+.Width-11{
+    width: 11.11%;
+    padding: 5px;
+}
+/* social meida section end */
+/* ============================= */
+
 /* responsive start */
+@media screen and (min-width: 1024px) {
+    .Wlg20{
+        width: 20%;
+    }
+}
+
 @media screen and (min-width: 575px) {
     .TopHeder .LeftSide{
         text-align: left !important;
@@ -498,7 +772,19 @@ button a:hover{
 }
 
 /* for tabe */
+@media screen and (max-width: 991px) {
+    .Width-11{
+        width: 20%;
+        padding: 5px
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .PaddingBgDiv{
         padding: 25px;
         padding-bottom: 5px;
@@ -539,12 +825,41 @@ button a:hover{
     .USDiv i {
         margin-bottom: 10px;
     }
+
+    .Clients p{
+        margin-bottom: 25px;
+    }
+
+    .SisterConcern .Wlg20{
+        width: 20%;
+    }
+
+    .SisterConcern .Wlg20 img{
+        width: 100%;
+        height: auto;
+    }
+
+    .WorkInfoDiv{
+        width: 28%;
+    }
+
+    .WorkArrow{
+        width: 5.333%;
+    }
+
+    .WorkArrow i {
+        font-size: 21px;
+    }
 }
 
 /* for mobile */
 
-
 @media screen and (max-width: 767px) {
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .PaddingBgDiv{
         padding: 15px;
         padding-bottom: -5px;
@@ -600,6 +915,22 @@ button a:hover{
         font-weight: 700;
         font-size: 31px;
     }
+
+    .Clients p{
+        margin-bottom: 10px;
+    }
+
+    .WorkArrow{
+        display: none;
+        width: 0;
+    }
+
+    .WorkInfoDiv {
+        width: 100%;
+        max-width: 358px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -608,7 +939,7 @@ button a:hover{
     }
 
     .MobileW50{
-        width: 50%;
+        width: 50% !important;
     }
 
     .ServicesText {
@@ -635,6 +966,16 @@ button a:hover{
 
     .PerPerformence p{
         font-size: 24px;
+    }
+
+    .SisterConcern .ImageBox {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Width-11{
+        width: 33.33%;
     }
 }
 
