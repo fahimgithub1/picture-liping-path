@@ -70,6 +70,10 @@ button a:hover{
     text-transform: uppercase; 
 }
 
+.PriceSectionMain{
+    margin-bottom: 50px;
+}
+
 .container{
     max-width: 1600px;
     width: 100%;
@@ -198,6 +202,7 @@ button a:hover{
     overflow: hidden;
     margin-bottom: 50px;
     max-height: 400px;
+    text-align: center;
 }
 
 .Heros img{
@@ -242,10 +247,12 @@ button a:hover{
 .Heros h5{
     font-weight: 700;
     font-size: 36px;
+    color: white;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
-.carousel-caption button{
+.Heros button{
     font-weight: 700;
     font-size: 22px;
     padding: 8px 20px;
@@ -257,12 +264,17 @@ button a:hover{
     border-radius: var(--border-radius);
 }
 
+.ServiceDiv{
+    margin-bottom: 20px;
+}
+
 .PerServices{
+    max-width: 354px;
     position: relative;
-    height: 310px;
-    margin-bottom: 10px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    height: 286px;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 25%);
     border-radius: var(--border-radius);
+    margin: auto;
 }
 
 .SectionMarginBot .Image{
@@ -331,9 +343,9 @@ button a:hover{
 
 .ServiceWithOverview img{
     border-radius: 12px;
-    max-width: 250px;
-    width: auto;
-    margin-bottom: 10px;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .ServiceWithOverview .SectionTitle{
@@ -350,10 +362,16 @@ button a:hover{
 /* services end */
 
 /* our work start */
+.SampleWorks{
+    display: flex;
+    justify-content: center;
+}
+
 .SampleWorks button{
     width: 150px;
     margin: auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 15px;
     margin-bottom: 20px;
     font-size: 22px;
 }
@@ -745,6 +763,64 @@ button a:hover{
 /* social meida section end */
 /* ============================= */
 
+/* Services Page start*/
+.ServiceHeros{
+    background: linear-gradient(to left, #2a2e76c4, #0388ca84);
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.ServiceHeros button{
+    /* background: linear-gradient(to left, #0388ca 50%, #2a2e76 50%); */
+    box-shadow:  0px 0px 10px rgba(255, 255, 255, 0.45);
+}
+
+.ServPageOver{
+    display: flex;
+    align-items: center;
+}
+
+.ServPageOver p{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.ServPageOverImage{
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.ServPageOverImage img{
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
+.ServicesReality .PriceSection {
+    margin-bottom: 20px;
+}
+
+.ServicesReality .PriceSection p{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* line-height: 24px; */
+    text-align: justify;
+    letter-spacing: 0.01em;
+}
+
+.ServicesReality{
+
+}
+/* Services Page end*/
+
 /* responsive start */
 @media screen and (min-width: 1024px) {
     .Wlg20{
@@ -850,6 +926,11 @@ button a:hover{
     .WorkArrow i {
         font-size: 21px;
     }
+
+    .PerServices,
+    .SectionMarginBot .Image{
+        height: 240px;
+    }
 }
 
 /* for mobile */
@@ -883,7 +964,14 @@ button a:hover{
         max-width: 100px;
     }
 
-    .carousel-caption button{
+    .carousel,
+    .carousel-inner,
+    .carousel-inner img{
+        max-height: 200px !important;
+        overflow: hidden;
+    }
+
+    .Heros button{
         font-weight: 700;
         font-size: 16px;
         padding: 5px 10px;
@@ -931,6 +1019,16 @@ button a:hover{
         margin: auto;
         margin-bottom: 15px;
     }
+
+    .ServiceHeros{
+        background: linear-gradient(to left, #2a2e76c4 50%, #0388ca84 50%);
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .ServPageOver p{
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -948,7 +1046,7 @@ button a:hover{
 
     .PerServices,
     .SectionMarginBot .Image{
-        height: 220px;
+        height: 200px;
     }
 
     .Pricing{
